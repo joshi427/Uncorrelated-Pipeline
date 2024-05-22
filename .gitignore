@@ -1,0 +1,16 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore the config.py file
+config.py
+
+# Ignore all .csv files
+*.csv
+
+# Ignore all .json files
+*.json
+
+# Ignore __pycache__ directories
+__pycache__/
+
+.idea/
