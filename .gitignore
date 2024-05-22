@@ -1,0 +1,11 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore the config.py file
+src/scrapers/scrapfly-scraper/config.py
+
+# Ignore all .csv files
+*.csv
+
+# Ignore all .json files
+*.json
