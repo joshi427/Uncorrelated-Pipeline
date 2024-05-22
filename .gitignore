@@ -2,23 +2,21 @@
 venv/
 
 # Ignore the config.py file
-<<<<<<< HEAD
+
 config.py
-=======
-src/scrapers/scrapfly-scraper/config.py
->>>>>>> afd75d2f1ee1b89deef3724af692d957e3cbcab1
 
 # Ignore all .csv files
 *.csv
 
 # Ignore all .json files
-<<<<<<< HEAD
+
 *.json
 
 # Ignore __pycache__ directories
 __pycache__/
 
 .idea/
-=======
-*.json
->>>>>>> afd75d2f1ee1b89deef3724af692d957e3cbcab1
+
+
+
+
