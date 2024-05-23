@@ -10,7 +10,7 @@ import gzip
 import json
 import os
 import jmespath
-import config
+from src.scrapers.scrapfly_scraper import config
 
 from parsel import Selector
 from typing import Dict, Iterator, List, Literal, Tuple, TypedDict
@@ -219,6 +219,8 @@ def _get_company_important_employees(data: Dict) -> List[Dict]:
         )
 
     return parsed
+
+
 def _important_people_from_company(data: Dict) -> List[Dict]:
     parsed = []
     for person in data.get("cards", {}).get("current_advisors_image_list", []):
@@ -235,6 +237,8 @@ def _important_people_from_company(data: Dict) -> List[Dict]:
         )
 
     return parsed
+
+
 def _reduce_employee_dataset(data: Dict) -> List[Dict]:
     parsed = []
     for person in data["entities"]:
